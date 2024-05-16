@@ -4,6 +4,6 @@ Computational Intelligence for Optimization (CIFO) - Project
 Members of the group:
 - Sebastião Oliveira
 - Sebastião Rosalinho
-- Pedro Barão
+- Ilyass Jannah
 - Guilherme Sá
 - André Filipe Silva
