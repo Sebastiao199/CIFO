@@ -1,11 +1,15 @@
 # CIFO 
-Computational Intelligence for Optimization (CIFO) 
-
-Twilight Group
+**Computational Intelligence for Optimization (CIFO)** 
+<br>
 
 Professors Leonardo Vanneschi and Berfin Sakallioglu
+<br>
+<br>
 
-Members of the group:
+
+
+**Twilight Group**
+<br>
 
 André Filipe Silva 20230972
 
