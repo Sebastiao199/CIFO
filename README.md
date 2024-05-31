@@ -6,7 +6,11 @@ Professors Leonardo Vanneschi and Berfin Sakallioglu
 <br>
 <br>
 
+**Instructions**
+<br>
+To run our code, download all .py files to the same directory and run the 'experiments.py' file. When it finishes running, to generate the plots, run 'utils.py'.
 
+<br>
 
 **Twilight Group**
 <br>
