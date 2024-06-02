@@ -47,7 +47,7 @@ def ranking_selection(population, fitness_scores):
         if fitness == 0:
             return individual
 
-    # Rank individuals by fitness, lowest first since this is a minimization optimization problem
+    # Rank individuals by fitness, highest fitness first since this is a minimization optimization problem
     ranked_individuals = sorted(zip(population, fitness_scores), key=lambda x: x[1])
 
     # Assign selection probabilities based on the individual's rank
@@ -77,7 +77,7 @@ def tournament_selection(population, fitness_scores, tournament_size=3):
     Returns:
     - Individual: The best individual (with the lowest fitness) from the randomly selected tournament group.
     """
-    # Randomly select the individuals that will be competing in the tournament
+    # Randomly select the individuals that will be competing in the tournament (with repetition)
     tournament = random.choices(list(zip(population, fitness_scores)), k=tournament_size)
 
     # Select the individual with the lowest fitness (the best individual) within the tournament

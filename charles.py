@@ -70,7 +70,7 @@ def initialize_population(pop_size, num_practical_turns, subjects_per_practical_
     return population
 
 
-# Generate a population with 5 individuals, each with 10 Practical Turns, 8 subjects per Practical Turn,
-# 5 days per week, and 7 blocks per day
+# Generate a population with 100 individuals, each with 10 Practical Turns, 4 subjects per Practical Turn,
+# 5 days per week, and 8 blocks per day
 population = initialize_population(100, 10, 4, 5,
                                    8)

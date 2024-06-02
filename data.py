@@ -7,11 +7,11 @@ def generate_subjects():
     Generates a dictionary where each key represents a Practical Turn, and each value is a list of subjects assigned to
     that turn.
 
-    The function creates a list of 30 unique subjects and then assigns a random subset of 5 subjects to each of 20
+    The function creates a list of 30 unique subjects and then assigns a random subset of 4 subjects to each of the 10
     Practical Turns.
 
     Returns:
-    - dict: A dictionary with keys as 'Class_i' where i is the Practical Turn number, and values are lists of 5 randomly
+    - dict: A dictionary with keys as 'Class_i' where i is the Practical Turn number, and values are lists of 4 randomly
     chosen subjects.
     """
 
@@ -21,9 +21,9 @@ def generate_subjects():
     # Initialize a dictionary to hold the subjects for each Practical Turn
     class_subjects = {}
 
-    # Loop through a predefined number of Practical Turns (11 in this case)
+    # Loop through a predefined number of Practical Turns (10 in this case)
     for i in range(1, 11):
-        # Assign each Practical Turn a random set of 5 subjects from the list of all subjects
+        # Assign each Practical Turn a random set of 4 subjects from the list of all subjects
         # `random.sample` ensures that the selected subjects for each class are unique and no subject is repeated within
         # a class
         class_subjects[f"Class_{i}"] = random.sample(all_subjects, 4)
