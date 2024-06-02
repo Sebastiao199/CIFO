@@ -64,7 +64,8 @@ def fitness_individual(individual):
         for subject, total_count in weekly_counts.items():
             if total_count < MIN_BLOCKS_PER_SUBJECT:
                 # Add a penalty of 5 times each shortfall
-                penalties += (MIN_BLOCKS_PER_SUBJECT - total_count) * 5  # Multiply shortfall by penalty weight
+                # Use max to prevent penalty from turning into reward if exists more than 8 blocks per week of the same subject
+                penalties += max(0,(MIN_BLOCKS_PER_SUBJECT - total_count) * 5)  # Multiply shortfall by penalty weight
 
     # Return the total penalties as the fitness score (lower is better)
     return penalties
